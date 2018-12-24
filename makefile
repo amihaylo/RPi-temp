@@ -1,4 +1,4 @@
-MAIN_FILE=./pytemp.py
+MAIN_FILE=./src/pytemp.py
 
 all: run
 
