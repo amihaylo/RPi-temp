@@ -8,7 +8,7 @@
 4. `make`
 
 # Schematic
-![Circuit](./res/img/circuit.jpg)
+<center><img src="./res/img/circuit.jpg" alt="circuit" /></center>
 
 | LED PIN# | GPIO PIN# | GPIO NAME |
 |----------|-----------|-----------|
@@ -27,9 +27,9 @@
 
 # Hardware Used
 1. [Raspberry Pi 3 Model B+](https://www.raspberrypi.org/products/raspberry-pi-3-model-b-plus/)
->  ![Raspberry Pi 3 Model B+](./res/img/rpi3_bplus.jpg)
+> <img src="./res/img/rpi3_bplus.jpg" alt="Raspberry Pi 3 Model B+" width="400"/>
 2. [Standard HD44780 LCD](https://www.adafruit.com/product/181)
->  ![Standard HD44780 LCD](./res/img/lcd_16x2.jpg)
+> <img src="./res/img/lcd_16x2.jpg" alt="Standard HD44780 LCD" width="400"/>
 
 # To run on RPi startup
 1. `crontab -e`
