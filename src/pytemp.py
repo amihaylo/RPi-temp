@@ -24,6 +24,9 @@ cities = ["toronto", "sofia", "bogota"]
 #DO NOT EDIT: this is where results for the api calls are stored
 results = [None]*len(cities)
 
+#The path to the log file
+LOG_FILENAME="./dump.log"
+
 #The time taken between API calls to update the weather (in seconds)
 UPDATE_TIMER=900
 
@@ -31,7 +34,10 @@ def log(str_in):
     curr_time = str(datetime.now())
     #Remove any newlines for easier logging
     str_in = str_in.replace("\n", " | ")
-    print("[{}]: {}".format(curr_time, str_in))
+    log_msg = "[{}]: {}".format(curr_time, str_in)
+    print(log_msg)
+    with open(LOG_FILENAME, "a") as logfile:
+        logfile.write(log_msg + "\n")
 
 def get_temp(city):
     try:
@@ -63,7 +69,7 @@ def update_temps():
     threading.Timer(UPDATE_TIMER, update_temps).start()
 
 def display_temps():
-    # global results
+    global results
     while True:
         for city_msg in results:
             lcd.message = city_msg
