@@ -1,5 +1,7 @@
 # RPI TEMPERATURE DISPLAY 
 #### Using an RPI and a char LCD displays the current temperature, and updates it periodically through python weather API
+<img src="./res/img/result1.jpg" alt="Raspberry Pi 3 Model B+" width="400"/><img src="./res/img/result2.jpg" alt="Raspberry Pi 3 Model B+" width="400"/>
+
 
 # Instructions
 1. `sudo apt-get update`
