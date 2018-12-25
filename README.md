@@ -41,3 +41,4 @@
 
 # Resources
 [Guide and Schematic ](https://learn.adafruit.com/character-lcds/python-circuitpython)
+[Python Weather API](https://pypi.org/project/weather-api/)
