@@ -1,3 +1,2 @@
 adafruit-circuitpython-charlcd
 RPi.GPIO==0.6.5
-weather-api==1.0.6

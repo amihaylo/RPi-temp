@@ -7,6 +7,8 @@
 1. `sudo apt-get update`
 2. `sudo apt-get -y install python3-pip`
 3. `pip3 install -r requirements.txt`
+4. Get API key from [openweathermap](https://openweathermap.org/)
+5. Append the following in your **~/.bashrc**: `export WEATHERAPIKEY="<YOUR-UNIQUE-HERE>"`
 4. `make`
 
 # Schematic
@@ -35,7 +37,7 @@
 
 # To run on RPi startup
 1. `crontab -e`
-2. Append to end of the file : `@reboot python3 <path>/src/pytemp.py`
+2. Append to end of the file : `@reboot python3 <path>/src/pitemp.py`
 3. Replace `<path>` with the full pathname of the repo
 4. `sudo raspi-config` > 3. Boot Options > B1. Desktop/CLI > B2. Console Autologin
 5. `sudo reboot`
