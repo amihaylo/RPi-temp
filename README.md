@@ -37,7 +37,7 @@
 
 # To run on RPi startup
 1. `crontab -e`
-2. Append to end of the file : `@reboot python3 <path>/src/pitemp.py`
+2. Append to end of the file : `@reboot export WEATHERAPIKEY="<YOUR-UNIQUE-HERE> && python3 <path>/src/pitemp.py`
 3. Replace `<path>` with the full pathname of the repo
 4. `sudo raspi-config` > 3. Boot Options > B1. Desktop/CLI > B2. Console Autologin
 5. `sudo reboot`
